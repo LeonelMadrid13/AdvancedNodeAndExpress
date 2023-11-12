@@ -13,6 +13,7 @@ async function main(callback) {
         // Make the appropriate DB calls
         await callback(client);
 
+
     } catch (e) {
         // Catch any errors
         console.error(e);
