@@ -18,8 +18,8 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false }
 }));
-passport.initialize()
-passport.session()
+app.use(passport.initialize())
+app.use(passport.session())
 
 app.set('view engine', 'pug')
 app.set('views', './views/pug')
